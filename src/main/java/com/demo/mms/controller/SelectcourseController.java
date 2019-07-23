@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -17,7 +16,7 @@ public class SelectcourseController {
     @Autowired
     private  SelectcourseService selectcourseService;
 
-    @RequestMapping("/addtranslation")
+    @RequestMapping("/addSelectcourse")
     @ResponseBody
     public Object addSelectcourse(@RequestBody Selectcourse selectcourse){
         selectcourseService.addSelectcourse(selectcourse);

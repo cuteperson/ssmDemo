@@ -15,7 +15,7 @@ public interface courseMapper {
 
     int updateByPrimaryKey(course record);
 
-    course selecourse(int course_id);
+    course selecourse(int student_id);
 
     void insertcourse(course course);
 }
